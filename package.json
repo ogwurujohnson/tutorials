@@ -5,8 +5,9 @@
   "author": "ogwurujohnson <ogwurujohnson@gmail.com>",
   "private": true,
   "scripts": {
+    "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build",
     "dev": "node build/dev-server.js",
-    "start": "node build/dev-server.js",
+    "start": "node server.js",
     "build": "node build/build.js"
   },
   "dependencies": {
@@ -32,7 +33,7 @@
     "css-loader": "^0.28.7",
     "cssnano": "^3.10.0",
     "eventsource-polyfill": "^0.9.6",
-    "express": "^4.16.2",
+    "express": "^4.17.1",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.5",
     "friendly-errors-webpack-plugin": "^1.6.1",

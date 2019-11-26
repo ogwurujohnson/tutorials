@@ -25,6 +25,8 @@
 
 <script>
 export default {};
+console.log('here')
+console.log(process.env.VUE_APP_ABLY_KEY)
 </script>
 
 <style>
