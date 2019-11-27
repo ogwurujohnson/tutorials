@@ -8,7 +8,7 @@ import * as VueGoogleMaps from 'vue2-google-maps'
  
 Vue.use(VueGoogleMaps, {
   load: {
-    key: 'AIzaSyBhnqTdMPfPkS9YyAinI2lVGo7S7qqCX_4',
+    key: process.env.VUE_APP_ABLY_KEY,
     libraries: 'places', // This is required if you use the Autocomplete plugin
     
   },
