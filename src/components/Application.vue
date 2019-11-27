@@ -38,7 +38,7 @@ import "vue-loading-overlay/dist/vue-loading.css";
 
 
 var ably = new Ably.Realtime({
-  key: process.env.VUE_APP_ABLY_KEY,
+  key: `${process.env.VUE_APP_ABLY_KEY}`,
   clientId: `${Math.random() * 1000000}`
 });
 
